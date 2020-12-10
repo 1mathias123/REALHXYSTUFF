@@ -1,0 +1,94 @@
+@media(min-width:2560px){
+	/*comman*/
+	.container{
+		max-width: 1280px;
+	}
+	/*comman end*/
+}
+@media(min-width:2000px) and (max-width:2560px){
+	/*comman*/
+	.container{
+		max-width: 1280px;
+	}
+	/*comman end*/
+}
+@media(min-width:1800px) and (max-width:1999px){
+	/*comman*/
+	.container{
+		max-width: 1280px;
+	}
+	/*comman end*/
+}
+@media(min-width:1551px) and (max-width:1799px){
+	/*comman*/
+	.container{
+		max-width: 1280px;
+	}
+	/*comman end*/
+}
+@media(min-width:1351px) and (max-width:1550px){
+	/*comman*/
+	.container{
+		max-width: 1280px;
+	}
+
+
+}
+@media(min-width:1200px) and (max-width:1350px){
+	
+}
+@media(min-width:1025px) and (max-width:1199px){
+	
+}
+@media(min-width:992px) and (max-width:1024px){
+	
+}
+@media(min-width:768px) and (max-width:991px){
+	.black-bx{
+		margin: 0 0 20px 0;
+		width: 100%;
+	}
+	.row{
+		margin-top: 20px
+	}
+	
+}
+@media(min-width:448px) and (max-width:767px){
+	.black-bx{
+		margin: 0 0 20px 0;
+		width: 100%;
+	}
+	.row{
+		margin-top: 20px
+	}
+
+}
+@media(max-width:447px){
+	.black-bx{
+		margin: 0 0 10px 0;
+		width: 100%;
+	}
+	.row{
+		margin-top: 10px
+	}
+	.black-bx div{
+		font-size: 16px
+	}
+
+
+	.trans_ref_outer{
+		flex-direction: column;
+		margin-bottom: 20px
+	}
+	.navbar-brand{
+		margin: auto;
+	}
+	nav .btn-main{
+		margin: auto;
+		margin-top: 12px
+	}
+	.navbar{
+		padding: 20px
+	}
+}
+

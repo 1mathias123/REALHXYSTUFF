@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/style.css?ver=1.01" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css?ver=1.0" />
+    <link rel="icon" href="images/favicon.png" type="image/gif" sizes="10x16" />
+    <script
+      src="https://kit.fontawesome.com/17b5c44e80.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>HXYT</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <nav
+      class="navbar navbar-expand-md wow fadeInDown"
+      data-wow-duration="1s"
+      data-wow-delay="0.20s"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img src="images/logo.png" alt="LOGO"
+        /></a>
+        <button id="connect-mm" class="btn-main">
+          <img src="images/icons/fox-icon.png" /><span
+            >Connect to Metamask</span
+          >
+        </button>
+      </div>
+    </nav>
+    <!-- Header -->
+
+    <section
+      class="main-sec wow fadeInDown"
+      data-wow-duration="1s"
+      data-wow-delay="0.20s"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 d-flex">
+            <div class="black-bx">
+              <img src="images/name1.png" class="bb-head" />
+              <div class="black-bx-cntnt">
+                <div>
+                  <h4>Your HXY wallet balance</h4>
+                  <span id="hxy-balance" class="currency">-</span>
+                  &nbsp;
+                  <img src="images/logo_icon.png" />
+                </div>
+                <br />
+                <div>
+                  <h4>Your HXB wallet balance</h4>
+                  <span id="hxb-balance" class="currency">-</span>
+                  &nbsp;
+                  <img src="images/logo_icon.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex">
+            <div class="black-bx blackmiddle">
+              <img src="images/name3.png" class="bb-head" />
+              <h4>
+                <div>HXY + HXB into HXYT <img src="images/rev.png" /></div>
+              </h4>
+
+              <div class="black-bx-cntnt">
+                <input
+                  type=""
+                  id="tron-address"
+                  name=""
+                  class="form-control"
+                  placeholder="Tron Address"
+                />
+              </div>
+              <div class="black-bx-ipouter">
+                <div class="black-bx-cntnt black-bx-cntnt1">
+                  <input
+                    type=""
+                    name=""
+                    id="hxy-input"
+                    placeholder="0.00"
+                    class="form-control"
+                    type="number"
+                  />
+                  <span class="input-label">HXY</span>
+                </div>
+                <div class="black-bx-cntnt">
+                  <input
+                    type=""
+                    name=""
+                    id="hxb-input"
+                    class="form-control"
+                    placeholder="0.00"
+                    type="number"
+                    disabled
+                  />
+                  <span class="input-label">HXB</span>
+                </div>
+              </div>
+              <button id="wrap-it" class="btn-main">WRAP IT</button>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex">
+            <div class="black-bx">
+              <img src="images/name2.png" class="bb-head" />
+              <h4>Your HXYT wallet balance</h4>
+              <div class="black-bx-cntnt">
+                <div>
+                  <span id="hxyt-balance" class="currency">-</span>
+                  &nbsp;
+                  <img src="images/logo_icon2.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="info">
+          <img src="images/info.png" />
+          the wrap rate is always 1 to 1 (HXY:HXYT)
+        </div>
+      </div>
+    </section>
+    <!-- The Modal -->
+    <div id="approval" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span id="close-approval" class="close">&times;</span>
+        <div style="color: black">
+          <div>
+            <h2>HXY Approval</h2>
+            <p>
+              State: <span id="hxy-state">Pending</span
+              ><span id="hxy-trailing">...</span>
+            </p>
+          </div>
+          <hr />
+          <div>
+            <h2>HXB Approval</h2>
+            <p>
+              State: <span id="hxb-state">Pending</span
+              ><span id="hxb-trailing">...</span>
+            </p>
+          </div>
+          <hr />
+          <div>
+            <button
+              id="trigger-transfer"
+              class="btn-main"
+              style="max-width: 250px; display: block; margin: inherit"
+              disabled
+            >
+              WRAP IT
+            </button>
+            <!-- <p>State: Awaiting</p>
+            <p>
+              Tokens on receiver wallet: <span id="receiver-wallet">-</span>
+            </p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Footer -->
+    <footer></footer>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/web3.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="js/owl.carousel.min.js"></script> -->
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript">
+      //wow animation js
+      new WOW().init();
+    </script>
+    <script type="text/javascript" src="js/site.js"></script>
+  </body>
+</html>
