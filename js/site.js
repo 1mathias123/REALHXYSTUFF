@@ -1,4 +1,4 @@
-const hxy_to_hxb_multiplier = 1e3;
+const hxy_to_hxb_multiplier = 1e4;
 const hxy_multiplier = 1e8; // ERC20 Decimals
 const hxb_multiplier = 1e8; // ERC20 Decimals
 const hxyt_multiplier = 1e8; // TRC20 Decimals
@@ -229,11 +229,11 @@ const hxy_abi = [
 ];
 const hxb_abi = hxy_abi;
 
-const contract_address = '0xA2df4BC13d6DA4A1Bc4eC2266DC2c5CfdfA3773f';
-const hxy_address = '0xf131c994DDCDd91A922A2DBc866Ae99a74afCd45';
-const hxb_address = '0xe18FFcb37caf55FAA68C1b70AEBCaAf7b46d1996';
+const contract_address = '0x3f38a0837e839891072fed5492d321a509675b86';
+const hxy_address = '0xf3a2ace8e48751c965ea0a1d064303aca53842b9';
+const hxb_address = '0x9bb6fd000109e24eb38b0deb806382ff9247e478';
 
-const hxyt_address = 'TAPh8DYVSYFRQWo6G4fvnKDxKXJLw1Vtnu';
+const hxyt_address = 'TKs3BT81Ri1Eb3ygPuHKzzUQTsmWsnDzUf';
 
 const setConnected = async () => {
   await ethereum.send('eth_requestAccounts');
