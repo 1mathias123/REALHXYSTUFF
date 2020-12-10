@@ -229,7 +229,7 @@ const hxy_abi = [
 ];
 const hxb_abi = hxy_abi;
 
-const contract_address = '0x3f38a0837e839891072fed5492d321a509675b86';
+const contract_address = '0x15e5f69360c01306822d51573fa64b90a8c8759b';
 const hxy_address = '0xf3a2ace8e48751c965ea0a1d064303aca53842b9';
 const hxb_address = '0x9bb6fd000109e24eb38b0deb806382ff9247e478';
 
