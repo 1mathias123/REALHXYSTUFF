@@ -233,7 +233,7 @@ const contract_address = '0x15e5f69360c01306822d51573fa64b90a8c8759b';
 const hxy_address = '0xf3a2ace8e48751c965ea0a1d064303aca53842b9';
 const hxb_address = '0x9bb6fd000109e24eb38b0deb806382ff9247e478';
 
-const hxyt_address = 'TKs3BT81Ri1Eb3ygPuHKzzUQTsmWsnDzUf';
+const hxyt_address = 'TVAAQyNZ5Dj8nfTAJnhW5KxCvLZ5oSMFFy';
 
 const setConnected = async () => {
   await ethereum.send('eth_requestAccounts');
